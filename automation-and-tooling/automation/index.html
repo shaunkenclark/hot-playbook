@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" class="govuk-template no-js">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Test and Quality Aproach for Services Developed Using "Automation" - HMCTS</title>
+
+    <link href="/stylesheets/manifest.css" rel="stylesheet" />
+
+    <link rel="canonical" href="https://hmcts.github.io/automation-and-tooling/automation/">
+
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:domain" content="hmcts.github.io" />
+      <meta name="twitter:image" content="https://hmcts.github.io/images/govuk-large.png" />
+      <meta name="twitter:title" content="Test and Quality Aproach for Services Developed Using &quot;Automation&quot; - HMCTS" />
+      <meta name="twitter:url" content="https://hmcts.github.io/automation-and-tooling/automation/" />
+
+      <meta property="og:image" content="https://hmcts.github.io/images/govuk-large.png" />
+      <meta property="og:site_name" content="HMCTS" />
+      <meta property="og:title" content="Test and Quality Aproach for Services Developed Using &quot;Automation&quot;" />
+      <meta property="og:type" content="object" />
+      <meta property="og:url" content="https://hmcts.github.io/automation-and-tooling/automation/" />
+
+    
+  </head>
+
+  <body class="govuk-template__body">
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+    <div class="app-pane">
+      <div class="app-pane__header toc-open-disabled">
+        <a href="#content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
+
+        <header class="govuk-header app-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-header__container--full-width">
+    <div class="govuk-header__logo">
+      <a href="https://github.com/hmcts" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            class="govuk-header__logotype-crown"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 132 97"
+            height="30"
+            width="36"
+          >
+            <path
+              fill="currentColor" fill-rule="evenodd"
+              d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"
+            ></path>
+          </svg>
+          <span class="govuk-header__logotype-text">
+            GOV.UK
+          </span>
+        </span>
+        <span class="govuk-header__product-name">
+          HMCTS
+        </span>
+      </a>
+        <strong class="govuk-tag">Live</strong>
+    </div>
+    <div class="govuk-header__content">
+      <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
+        <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
+        <ul id="navigation" class="govuk-header__navigation-list">
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="/">Documentation</a>
+            </li>
+            <li class="govuk-header__navigation-item">
+              <a class="govuk-header__link" href="https://github.com/hmcts">GitHub</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      </div>
+
+        <div id="toc-heading" class="toc-show fixedsticky">
+          <button type="button" class="toc-show__label js-toc-show" aria-controls="toc">
+            Table of contents <span class="toc-show__icon"></span>
+          </button>
+        </div>
+
+      <div class="app-pane__body" data-module="in-page-navigation">
+          <div class="app-pane__toc">
+            <div class="toc" data-module="table-of-contents" tabindex="-1" aria-label="Table of contents" role="dialog">
+              <div class="search" data-module="search" data-path-to-site-root="/">
+  <form action="https://www.google.co.uk/search" method="get" role="search" class="search__form govuk-!-margin-bottom-4">
+    <input type="hidden" name="as_sitesearch" value="https://hmcts.github.io"/>
+    <label class="govuk-label search__label" for="search" aria-hidden="true">
+      Search (via Google)
+    </label>
+    <input
+      type="text"
+      id="search" name="q"
+      class="govuk-input govuk-!-margin-bottom-0 search__input"
+      aria-controls="search-results"
+      placeholder="Search">
+    <button type="submit" class="search__button">Search</button>
+  </form>
+</div>
+
+              <button type="button" class="toc__close js-toc-close" aria-controls="toc" aria-label="Hide table of contents"></button>
+              <nav id="toc" class="js-toc-list toc__list" aria-labelledby="toc-heading" data-module="collapsible-navigation">
+                      <ul>
+  <li>
+    <a href="/"><span>Test Engineering Playbook</span></a>
+  </li>
+<li><a href="/testing-standards/"><span>Testing Standards</span></a>
+<ul>
+  <li>
+    <a href="/testing-standards/key-practices/"><span>Key Practices</span></a>
+  </li>
+  <li>
+    <a href="/testing-standards/test-strategy/"><span>Test Strategy</span></a>
+  </li>
+  <li>
+    <a href="/testing-standards/definition-ready-done/"><span>Definition of Ready and Done</span></a>
+  </li>
+</ul>
+</li>
+<li><a href="/automation-and-tooling/"><span>Automation and Tooling</span></a>
+<ul>
+  <li>
+    <a href="/automation-and-tooling/test-tools/"><span>Test Tools</span></a>
+  </li>
+  <li>
+    <a href="/automation-and-tooling/automation/"><span>Test and Quality Aproach for Services Developed Using “Automation”</span></a>
+  </li>
+</ul>
+</li>
+<li><a href="/best-practices/"><span>Best Practices</span></a>
+<ul>
+  <li>
+    <a href="/best-practices/end-to-end/"><span>End to End (Functional) Testing</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/testing-power-platform/"><span>Testing on Power Platform</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/integration-testing/"><span>Integration Testing</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/unit-testing/"><span>Unit Testing</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/manual-testing/"><span>Manual Testing</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/contract-testing/"><span>Contract Testing</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/frontend-testing/"><span>Testing Frontend Applications</span></a>
+  </li>
+  <li>
+    <a href="/best-practices/exploratory-testing/"><span>Exploratory Testing</span></a>
+  </li>
+</ul>
+</li>
+</ul>
+
+
+              </nav>
+            </div>
+          </div>
+
+        <div class="app-pane__content toc-open-disabled">
+          <main id="content" class="technical-documentation" data-module="anchored-headings">
+            <h1 id="test-and-quality-aproach-for-services-developed-using-quot-automation-quot">Test and Quality Aproach for Services Developed Using &ldquo;Automation&rdquo;</h1>
+
+<div id="main-content" class="wiki-content">
+                           
+        <h3 id="TestandQualityapproachforservicesdevelopedusing'automation'-Background:"><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span><strong>Background:</strong></h3><p><br><span style="color: rgb(23,43,77);">It has been identified that one of the areas that we believe we need to focus on within HoSE, is establishing the test and Quality approach for services developed using the &lsquo;automation&rsquo; approach and environments.</span><br><span style="color: rgb(23,43,77);">&nbsp;</span><br><span style="color: rgb(23,43,77);">We have an established testing and QA approach/standard established (under CFT Reform) for services developed under the standard &lsquo;Java stack&rsquo; but we don&rsquo;t have a parallel approach/standard for &lsquo;automation&rsquo; to our knowledge.</span><br><span style="color: rgb(23,43,77);">&nbsp;</span><br><span style="color: rgb(23,43,77);">The current &lsquo;push&rsquo; under HoSE is to look to make a recommendation regarding an &lsquo;automation&rsquo; tool and the &lsquo;point and click&rsquo; type tools provided by the PowerPlatform seem to be front-running in this exercise.</span><br><span style="color: rgb(23,43,77);">&nbsp;</span><br><span style="color: rgb(23,43,77);">On that basis, it may well make sense to investigate and capture the approach / standards that could / would be adoptable, should the PowerPlatform be in-turn, adopted. &nbsp;</span><br><span style="color: rgb(23,43,77);">&nbsp;</span><br><span style="color: rgb(23,43,77);">This would make a useful companion and input element to the exercise that our team i</span><span style="color: rgb(23,43,77);">s currently undertaking too i.e. if we go this way, how is Quality established and verified.</span><br><span style="color: rgb(23,43,77);">&nbsp;</span><br><span style="color: rgb(23,43,77);">Within DTS, there has been a recent development using elements of the PowerPlatform e.g. to our knowledge Pre-Recorded Evidence (PRE) has utilised PowerApps (from the PowerPlatform tool set) so this may be a good starting point to begin an analysis of how testing has been undertaken within PRE and ultimately how a Quality baseline has been assured, prior to MVP deployment to Production.</span></p><h3 id="TestandQualityapproachforservicesdevelopedusing'automation'-ListofactionsIdentifiedtoperformthistask."><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span>List of actions Identified to perform this task.</h3><ol><li>Establish contact with the PRE team</li><li>Perform analysis to understand the test approach undertaken within PRE</li><li>Review this test approach - compare and align the testing standard objectives (levels) against the standards established for CFT (standard Java stack)</li><li>Align standards against existing approach/standards - highlighting differences and why they differ using &lsquo;automation&rsquo; (e.g. automated testing may not be possible in an &lsquo;automation&rsquo; environment - for whatever reason, the tooling will be different i.e. SonarCube can&rsquo;t be utilised, so XYZ is used, is Zap (or whatever tool is used now on CFT Reform) adaptable for establishing an OWASP security standard, etc etc etc&hellip;).</li><li>Examine &lsquo;industry&rsquo; standards and align/tweak to accommodate, as appropriate</li><li>Examine how other &lsquo;automation&rsquo; testing has been undertaken to date within DTS e.g. how do we test RPA using the UIPath toolset - and does this differ from &lsquo;automation&rsquo; using PowerPlatform - if there are differences - what are they, why do they exist and is it ok?.</li><li>Document recommended standard for &lsquo;automation&rsquo; testing</li><li>Validate</li><li>Socialise</li><li>Support Uptake Drive.</li></ol><h3 id="TestandQualityapproachforservicesdevelopedusing'automation'-ThecurrentTestapproachwithinthePREteam"><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span>The current Test approach with in the PRE team</h3><p>Because the nature of Low code PowerApps application development with PowerApp platform Test approach will differ from traditional web app testing. PRE QA team will try to fit reform<span>&nbsp;</span><a rel="nofollow" href="https://tools.hmcts.net/confluence/display/RQA/Testing+Standards">Test standard</a>s as many as applicable to PowerApps</p><p><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img class="confluence-embedded-image" draggable="false" height="150" src="/confluence/download/attachments/1572573679/image2022-2-8_16-25-19.png?version=1&amp;modificationDate=1652105729315&amp;api=v2&amp;__ncforminfo=3P1isV4Po1pQcZbMhN997KrFivyBGaZuUnRZKsn0tg-wFtcMGMlfLcdk8U5tWK9AZWT5xSNWwtmsU6x4kgODVcmvnb7af8VMN-iHRL28hg5hEz8rvd969Q==" data-image-src="/confluence/download/attachments/1572573679/image2022-2-8_16-25-19.png?version=1&amp;modificationDate=1652105729315&amp;api=v2" data-unresolved-comment-count="0" data-linked-resource-id="1576344869" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="image2022-2-8_16-25-19.png" data-base-url="https://tools.hmcts.net/confluence" data-linked-resource-content-type="image/png" data-linked-resource-container-id="1572573679" data-linked-resource-container-version="11" alt=""></span></span></p><h4 id="TestandQualityapproachforservicesdevelopedusing'automation'-StaticQA:"><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span>Static QA:</h4><p>The following Test Stages will be run before deployment of app to power platform</p><ol><li>Solution Checker - &nbsp;<a class="external-link" href="https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tool-tasks" rel="nofollow">https://docs.microsoft.com/en-us/power-platform/alm/devops-build-tool-tasks</a></li><li>SonarQube&nbsp; for Top-10 Vulnerabilities. - &nbsp;<a href="https://www.sonarqube.org/features/security/owasp/" rel="nofollow" class="external-link">https://www.sonarqube.org/features/security/owasp/</a></li><li>Dependency Checker -&nbsp;</li><li>Accessibility testing - Using pa11y and<span>&nbsp;</span><a class="external-link" href="https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/accessible-apps" rel="nofollow">https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/accessible-apps</a></li></ol><h4 id="TestandQualityapproachforservicesdevelopedusing'automation'-DynamicQA:"><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span>Dynamic QA:</h4><ol><li>Smoke Test&nbsp; -&nbsp; First happy path scenario before progressing build different environment</li><li>Automated Acceptance Test (Functional UI Test) -&nbsp; &nbsp;Using SpecFlow + Playwright + .Net</li></ol><h4 id="TestandQualityapproachforservicesdevelopedusing'automation'-ManualQA:"><span class="handy-header aui-icon aui-icon-small aui-iconfont-link" title="Copy link"></span>Manual QA:</h4><p>Any tests which can&rsquo;t automated like below will be covered as a part of the Manual QA using tool Zephyr for Jira.</p><ol><li>Video Controls</li><li>Video latency</li><li>Visual representations</li><li>Time bound acceptance criteria</li></ol><p><span style="color: rgb(23,43,77);">Automation testing tools consider for PRE team is as follows.</span></p><ol><li><span style="color: rgb(23,43,77);">Test Studio</span></li><li><span style="color: rgb(23,43,77);">PlayWright</span></li><li><span style="color: rgb(23,43,77);">Cypress</span></li></ol><p><br></p><p><span style="color: rgb(23,43,77);">Please see below the comparisons of what can/ can&rsquo;t be done with each of these tools.&nbsp;</span></p><p><br></p><div class="table-wrap"><table class="wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" role="grid" style="padding: 0px;" resolved=""><thead class="tableFloatingHeaderOriginal"><tr role="row" class="tablesorter-headerRow"><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label=": No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><br></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Cypress: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Cypress</p></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Playwright: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Playwright</p></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Test studio: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Test studio</p></div></th></tr></thead><thead class="tableFloatingHeader" style="display: none;"><tr role="row" class="tablesorter-headerRow"><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label=": No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><br></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Cypress: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Cypress</p></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Playwright: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Playwright</p></div></th><th style="text-align: left; user-select: none;" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Test studio: No sort applied, activate to apply an ascending sort"><div class="tablesorter-header-inner"><p>Test studio</p></div></th></tr></thead><colgroup><col><col><col><col></colgroup><tbody aria-live="polite" aria-relevant="all"><tr role="row"><td style="text-align: left;" class="confluenceTd">Multiple Domain support</td><td style="text-align: left;" class="confluenceTd">&nbsp;No</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Authentication process setup</td><td style="text-align: left;" class="confluenceTd">&nbsp;Long</td><td style="text-align: left;" class="confluenceTd">easy</td><td style="text-align: left;" class="confluenceTd">Yes</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">webkit support (safari)</td><td style="text-align: left;" class="confluenceTd">No</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Multiple browsers at the same time</td><td style="text-align: left;" class="confluenceTd">No</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Mature community</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Iframe support</td><td style="text-align: left;" class="confluenceTd">Limited(no)</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Hover support</td><td style="text-align: left;" class="confluenceTd">No</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Licensing required for some tools&nbsp;</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td><td style="text-align: left;" class="confluenceTd">Yes</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">support for multiple Language</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Recording tool</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd">Network Monitoring</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd"><p>Video and Screen capture</p></td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd"><p>Test readability and maintainability</p></td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr><tr role="row"><td style="text-align: left;" class="confluenceTd"><p>Execution speed with automatic wait</p></td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">Yes</td><td style="text-align: left;" class="confluenceTd">No</td></tr></tbody></table></div><div class="table-wrap"><table class="wrapped confluenceTable" resolved=""><tbody><tr><td class="confluenceTd">Testing Type</td><td class="confluenceTd">Process For Automation-Type</td></tr><tr><td class="confluenceTd">Testing during the development</td><td class="confluenceTd">1. Devloper should test each step working as expected as soon as they add the step.<br><br>If the App use any custom code, then it should adhere to the following standards<br>All new code and re-factored (legacy) code should be unit tested.<br>Every test includes an assert<br><br>Scope of tests will include valid, invalid &amp; edge cases derived during 3 Amigo (or similar meeting)<br>JIRA tasks related to unit tests<br>Coverage criteria is &gt; 80%<br>Sonar-cloud code quality criteria met (i.e. Duplicated Lines &lt; 3%)</td></tr><tr><td class="confluenceTd">Static analysis</td><td class="confluenceTd">1. Flow Checker: No errors should be reported by flow checker <br>2. Solution Checker: No errors should be reported by solution checker<br>Please Note:&nbsp; These checkers only applicable for power Platform</td></tr><tr><td class="confluenceTd">Integration Testing</td><td class="confluenceTd">1. All integrations with custom conectors are tested.<br>2. Dataverse is a feature of power platform and not an external component, we should still need some level of testing to make sure everything is working as expected.<br>3. Integration test report should be published to CI/CD pipeline.<br>4. Jira tasks created for integration tests</td></tr><tr><td class="confluenceTd">Smoke Testing</td><td class="confluenceTd">1. First happy path scenario should be tested before progressing build to different environment.</td></tr><tr><td class="confluenceTd">UI Functional</td><td class="confluenceTd">1. Consider Test Pyramid, UI functional tests sits at the top of the pyramid and only write critical path scenarios. Keep it to minimum.<br>2. Make sure no duplication of the tests from previous testing type (other levels of the test pyramid)<br>3. Use the tools such as PlayWright, Codecept JS, Protractor or similar.<br>4. Make sure to use the tools that produces test reports and the same will be published via Jenkins</td></tr><tr><td class="confluenceTd">Manual &amp; Exploratory Testing</td><td class="confluenceTd">1. Any tests that were not possible to automate must be reviewed and documented (in Zephyr or simiar).<br>2. Make sure to run these manual tests everytime we release.</td></tr><tr><td class="confluenceTd">Performance Testing</td><td class="confluenceTd">&ldquo;Response time are measured by 95th percentiles<br>UI - 1500ms<br>Volume (Throughput) - defined at the project level<br>User Concurrency - defined at the project level<br>Pipeline - 10 users minimum<br>Server utlisation<br>ASE - I2 | 2 - 60% CPU &amp; RAM<br>Containers - 60% CPU &amp; RAM<br>Cluster - 60% CPU &amp; RAM (total - all Containers)&rdquo;</td></tr><tr><td class="confluenceTd">Security Testing</td><td class="confluenceTd">Yarn audit and Helmet running<br>Zap Overnights implemented</td></tr><tr><td class="confluenceTd">External Pen Testing</td><td class="confluenceTd">ITHC completed / scheduled where applicable<br>Outstanding issues?<br>Test Report Stats?</td></tr><tr><td class="confluenceTd">Accessability Testing</td><td class="confluenceTd"><p>1. Pa11y - all pages spidered - no outstanding AA or A compliancy failures.<br>2. Accessability checker in powerApps helps highlight the common accessability issues.<br>Compliant with WCAG 2.1 (update includes devices)<br>Manual device testing - windows NVDA / JAWS. Mac VoiceOver, Keyboard, iOS/ Android mobile and tablet<br>DAC audit completed / Scheduled where applicable - especially after major code changes<br>Outstanding issues?<br>Test Report Stats?<br>Accessibility statement up-to-date</p></td></tr></tbody></table></div><p><br></p><p><span>Proper testing methods and techniques become even more important to make the transition to RPA as successful as possible. Although RPA testing practices are similar to that of other types of software testing.</span></p><p><br></p><ol><li><strong>Understand the business process</strong><span>. As a process is being automated, it will go through many changes. Before any testing activities can begin, the primary goal of the test team should be to fully understand the newly automated process. This is one of the most important steps in the test cycle because it lays the foundation on which the other steps are built. The best way to understand the process is to review the Process Definition Document (PDD), the Solution Design Document (SDD) and any other documentation that was created during the design phase of the automation. Once the team understands the business process, it can move on to the next step, creating the test scenarios to test the code against the business rules.</span></li><li><strong>Test scenarios.</strong><span> Now it’s time to verify the automation has been developed according to the business rules documented in the design documents. The key to having good test scenarios is to make sure they are clear, concise and cover each business rule noted in the PDD/SDD. Usually, the SDD lists the required scenarios that need to be validated during testing, but it’s also important to review the process flows and cross-verify the SDD for any missing information.</span></li><li><strong>Test scripts.</strong><span> This stage requires putting together the information you’ve previously gathered. The test script is made up of numerous test cases with a variety of explicit outcomes. It is typically in an Excel format and will contain the test scenarios, input data requirements for testing the scenarios, expected and actual results, and a pass or fail column. Like the test scenarios, it is best to write the script clearly and concisely. The more thorough the script, the less chance of gaps or missed test scenarios. Depending on the complexity of the process, it can be a good idea to have the design team review the script and make any changes or suggestions. This additional step can help eliminate any gaps that may arise during testing.</span></li><li><strong>Test the data</strong><span>. Test data is the fuel for the fire. Without valid test data, automation testing can lead to inaccurate test results, which can lead to invalid defects, often creating a strain on the testing timeline. This is why it’s important to have a clear understanding of what type of data and format you need for a successful testing cycle.</span></li><li><strong>Manage defects.</strong><span> As expected with any automation testing, defects will be found. The team must document the defects and notify the development team. The key to effective defect management is detail. The more information the test team can provide, the quicker the correction can be made. Some ways to provide details include: writing the test-case description, taking a screenshot of the error, recording where the process is failing, attaching the input file used to test, and attaching the output file produced by the automation.</span></li></ol><p><br></p><p><br></p>
+
+                
+        
+    
+        <span class="tf-inline-filter" title="Filter column"></span><div class="tf-inline-btn-container">
+        
+        <div id="tfn"></div>
+
+            
+          </main>
+
+          <aside>
+              <ul class="contribution-banner">
+                <li><a href="https://github.com/https://github.com/hmcts/blob/source/source/automation-and-tooling/automation/index.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/https://github.com/hmcts/issues/new?body=Problem+with+%27Test+and+Quality+Aproach+for+Services+Developed+Using+%22Automation%22%27+%28https%3A%2F%2Fhmcts.github.io%2Fautomation-and-tooling%2Fautomation%2F%29&amp;labels=bug&amp;title=Re%3A+%27Test+and+Quality+Aproach+for+Services+Developed+Using+%22Automation%22%27">Report problem</a></li>
+                <li><a href="https://github.com/https://github.com/hmcts">GitHub Repo</a></li>
+              </ul>
+          </aside>
+
+          <footer class="govuk-footer app-footer" role="contentinfo">
+  <div class="govuk-footer__meta">
+    <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        class="govuk-footer__licence-logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewbox="0 0 483.2 195.7"
+        height="17"
+        width="41"
+      >
+        <path
+          fill="currentColor"
+          d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"
+        />
+      </svg>
+      <span class="govuk-footer__licence-description">
+        All content is available under the
+        <a
+          class="govuk-footer__link"
+          href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+          rel="license"
+        >Open Government Licence v3.0</a>, except where otherwise stated
+      </span>
+    </div>
+    <div class="govuk-footer__meta-item">
+      <a
+        class="govuk-footer__link govuk-footer__copyright-logo"
+        href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
+      >© Crown copyright</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+      </div>
+    </div>
+
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-170132988-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'displayFeaturesTask', null);
+  ga('set', 'transport', 'beacon');
+  ga('set', 'page', location.pathname+location.search+location.hash);
+  ga('send', 'pageview');
+  </script>
+
+    <script src="/javascripts/application.js"></script>
+  </body>
+</html>
