@@ -1,16 +1,16 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: https://shaunkenclark.github.io
+host: https://shaunkenclark.github.io/hot-playbook
 
 # Header-related options
 show_govuk_logo: true
 service_name: HMCTS
-service_link: https://github.com/hmcts
+service_link: https://shaunkenclark.github.io/hot-playbook
 phase: Live
 
 # Links to show on right-hand-side of header
 header_links:
   Documentation: /
-  GitHub: https://github.com/hmcts
+  GitHub: https://shaunkenclark.github.io/hot-playbook
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
