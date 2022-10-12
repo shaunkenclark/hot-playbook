@@ -5,23 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <title>Test Engineering Playbook - HMCTS</title>
+    <title>Manual Testing - HMCTS</title>
 
     <link href="/hot-playbook/stylesheets/manifest.css" rel="stylesheet" />
 
-    <link rel="canonical" href="https://shaunkenclark.github.io/hot-playbook/">
+    <link rel="canonical" href="https://shaunkenclark.github.io/hot-playbook/best-practices/manual-testing/">
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:domain" content="shaunkenclark.github.io" />
       <meta name="twitter:image" content="https://shaunkenclark.github.io/hot-playbook/images/govuk-large.png" />
-      <meta name="twitter:title" content="Test Engineering Playbook - HMCTS" />
-      <meta name="twitter:url" content="https://shaunkenclark.github.io/hot-playbook/" />
+      <meta name="twitter:title" content="Manual Testing - HMCTS" />
+      <meta name="twitter:url" content="https://shaunkenclark.github.io/hot-playbook/best-practices/manual-testing/" />
 
       <meta property="og:image" content="https://shaunkenclark.github.io/hot-playbook/images/govuk-large.png" />
       <meta property="og:site_name" content="HMCTS" />
-      <meta property="og:title" content="Test Engineering Playbook" />
+      <meta property="og:title" content="Manual Testing" />
       <meta property="og:type" content="object" />
-      <meta property="og:url" content="https://shaunkenclark.github.io/hot-playbook/" />
+      <meta property="og:url" content="https://shaunkenclark.github.io/hot-playbook/best-practices/manual-testing/" />
 
     
   </head>
@@ -66,7 +66,7 @@
       <nav class="govuk-header__navigation govuk-header__navigation--end" aria-label="Menu">
         <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide menu">Menu</button>
         <ul id="navigation" class="govuk-header__navigation-list">
-            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+            <li class="govuk-header__navigation-item">
               <a class="govuk-header__link" href="/">Documentation</a>
             </li>
             <li class="govuk-header__navigation-item">
@@ -171,44 +171,25 @@
 
         <div class="app-pane__content toc-open-disabled">
           <main id="content" class="technical-documentation" data-module="anchored-headings">
-            <h1 id="test-engineering-playbook">Test Engineering Playbook</h1>
-<p>This Test Engineering playbook is a central document repository that can aid in understanding the goals, expectations, and implementation of testing standard for projects across HMCTS.</p>
-
-<ul>
-<li><a href="hot-playbook/testing-standards/index.html">Testing Standards</a>
-
-<ul>
-<li><a href="hot-playbook/testing-standards/key-practices/index.html">Key Practices</a></li>
-<li><a href="hot-playbook/testing-standards/test-strategy/index.html">Test Strategy</a></li>
-<li><a href="hot-playbook/testing-standards/definition-ready-done/index.html">Definition of Ready and Done</a></li>
-</ul></li>
-<li><a href="hot-playbook/best-practices/index.html">Best Practices</a>
-
-<ul>
-<li><a href="hot-playbook/best-practices/contract-testing/index.html">Contract Testing</a></li>
-<li><a href="hot-playbook/best-practices/end-to-end/index.html">End to End (Functional) Testing</a></li>
-<li><a href="hot-playbook/best-practices/exploratory-testing/index.html">Exploratory Testing</a></li>
-<li><a href="hot-playbook/best-practices/integration-testing/index.html">Integration Testing</a></li>
-<li><a href="hot-playbook/best-practices/manual-testing/index.html">Manual Testing</a></li>
-<li><a href="hot-playbook/best-practices/frontend-testing/index.html">Testing Frontend Applications</a></li>
-<li><a href="hot-playbook/best-practices/unit-testing/index.html">Unit Testing</a></li>
-<li><a href="hot-playbook/best-practices/testing-power-platform/index.html">Testing on Power Platform</a></li>
-</ul></li>
-<li><a href="hot-playbook/automation-and-tooling/index.html">Automation and Tooling</a>
-
-<ul>
-<li><a href="hot-playbook/automation-and-tooling/automation/index.html">Test and Quality Aproach for Services Developed Using &ldquo;Automation&rdquo;</a></li>
-<li><a href="hot-playbook/automation-and-tooling/test-tools/index.html">Test Tools</a></li>
-</ul></li>
-</ul>
+            <h1 id="manual-testing">Manual Testing</h1>
+<h3 id="any-test-case-that-is-not-suitable-for-automation-testing-should-be-included-in-manual-test-pack">Any test case that is not suitable for automation testing should be included in manual test pack</h3>
+<p>Any test that is not part of the unit, integration, contract or UI end to end automated tests must be included in the manual test pack. Some examples include, file downloads, captcha, visual testing elements, two factor authentication scenarios where</p>
+<h3 id="record-all-your-manual-test-cases-in-zephyr-or-similar">Record all your manual test cases in Zephyr or similar</h3>
+<p>Record your test cases into Zephyr or similar tool. This way we can keep track of what can be tested for a release</p>
+<h3 id="make-sure-to-include-all-necessary-elements-when-you-write-your-test-case">Make sure to include all necessary elements when you write your test case</h3>
+<p>Test case to include Test case id, test case description, test steps, test data, expected result, actual result and test status (Pass/ fail)</p>
+<h3 id="test-data-preparation">Test Data Preparation</h3>
+<p>With the automation tests we write the code to create and destroy the data that is required for the tests, but we do not have that luxury when it comes to manual testing, so it is important to create the test data appropriately to start.</p>
+<h3 id="don-t-forget-to-execute-your-manual-tests-for-every-release">Don’t forget to execute your manual tests for every release</h3>
+<p>It is often the case that automated tests will be part of the CI/CD pipeline and they will run automatically every time the the pipeline is triggered. We pay no or little attention to manual test case execution release.</p>
 
             
           </main>
 
           <aside>
               <ul class="contribution-banner">
-                <li><a href="https://github.com/https://shaunkenclark.github.io/hot-playbook/blob/source/source/index.html.md.erb">View source</a></li>
-                <li><a href="https://github.com/https://shaunkenclark.github.io/hot-playbook/issues/new?body=Problem+with+%27Test+Engineering+Playbook%27+%28https%3A%2F%2Fshaunkenclark.github.io%2Fhot-playbook%2F%29&amp;labels=bug&amp;title=Re%3A+%27Test+Engineering+Playbook%27">Report problem</a></li>
+                <li><a href="https://github.com/https://shaunkenclark.github.io/hot-playbook/blob/source/source/best-practices/manual-testing/index.html.md.erb">View source</a></li>
+                <li><a href="https://github.com/https://shaunkenclark.github.io/hot-playbook/issues/new?body=Problem+with+%27Manual+Testing%27+%28https%3A%2F%2Fshaunkenclark.github.io%2Fhot-playbook%2Fbest-practices%2Fmanual-testing%2F%29&amp;labels=bug&amp;title=Re%3A+%27Manual+Testing%27">Report problem</a></li>
                 <li><a href="https://github.com/https://shaunkenclark.github.io/hot-playbook">GitHub Repo</a></li>
               </ul>
           </aside>
