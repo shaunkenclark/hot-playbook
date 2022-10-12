@@ -30,5 +30,5 @@ max_toc_heading_level: 1
 prevent_indexing: false
 
 show_contribution_banner: true
-github_repo: https://github.com/hmcts
+github_repo: https://shaunkenclark.github.io/hot-playbook
 github_branch: source
