@@ -1,5 +1,5 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: https://shaunkenclark.github.io/hot-playbook
+host: testing
 
 # Header-related options
 show_govuk_logo: true
